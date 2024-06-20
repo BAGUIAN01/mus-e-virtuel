@@ -1,0 +1,95 @@
+
+<!--
+
+Un répertoire assets, scripts, dist, css
+
+Un fichier index.html
+Un fichier script-simple.js
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Babylon - Basic scene</title>
+	<link href="css/main.css" rel="stylesheet" />
+	<script src="dist/babylon.js"></script>
+	<script src="dist/cannon.js"></script>
+	<script src="dist/Oimo.js"></script>
+	<script src="dist/babylon.gui.js"></script>
+	<script src="dist/babylon.objFileLoader.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://preview.babylonjs.com/babylon.js"></script>
+	<script src="https://preview.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+	<script>
+		const descriptionDiv = document.createElement("div");
+		descriptionDiv.style.fontFamily = "'Space Mono'";
+		descriptionDiv.style.fontSize= "22px"
+		descriptionDiv.classList.add("description");
+		descriptionDiv.style.position = "absolute";
+		descriptionDiv.style.whiteSpace = "break-spaces"
+		descriptionDiv.style.display = "none";
+		descriptionDiv.style.justifyContent = "left";
+		descriptionDiv.style.alignItems = "center";
+		descriptionDiv.style.bottom = "0";
+		descriptionDiv.style.backgroundColor = "#000";
+		descriptionDiv.style.padding = "20px 100px";
+		descriptionDiv.style.color = "yellow";
+		descriptionDiv.style.left = "0";
+		descriptionDiv.style.right = "0";
+		descriptionDiv.style.width = "";
+		descriptionDiv.style.boxShadow = "0px 75px 100px black";
+		descriptionDiv.style.borderRadius= "30px 30px 0px 0px";
+		descriptionDiv.style.border = "4px solid";
+		descriptionDiv.style.borderColor = "yellow";
+		descriptionDiv.style.backgroundImage = "url('./assets/1000-10-49.png')";
+
+
+		let typingTimeout;
+
+		document.body.appendChild(descriptionDiv);
+		function showModal(descriptionText) {
+			descriptionDiv.innerText = descriptionText;
+			descriptionDiv.style.display = "flex";
+			typeWriter(descriptionText, 0);
+		}
+		function hideModal() {
+			descriptionDiv.innerText = "";
+			descriptionDiv.style.display = "none";
+		}
+
+		function typeWriter(text, n) {
+            if (n < text.length) {
+                $('.description').html(text.substring(0, n + 1));
+                n = n+2;
+                typingTimeout = setTimeout(function () {
+                    typeWriter(text, n);
+                }, 5);
+            }
+        }
+		
+		function cancelTyping() {
+			clearTimeout(typingTimeout);
+		}
+	</script>
+	<canvas id="renderCanvas" class="offScreen"></canvas>
+	<script type="module"">
+		import {World} from './js/world.js' ; 
+		window.addEventListener("DOMContentLoaded", ()=> {
+        		const world = new World();
+			world.createWorld({}) ; 
+        		world.go() ; 
+  		}) ; 
+	</script>
+</body>
+</html>
+
