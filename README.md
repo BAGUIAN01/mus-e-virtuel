@@ -47,7 +47,7 @@ Pour notre projet de 5e année en réalité virtuelle, nous avons conçu un mus�
 À l'étage, les visiteurs peuvent découvrir la scène emblématique de la fin de l'épisode VI, où Luke Skywalker voit les esprits de ses maîtres Jedi décédés. Cette scène, riche en émotion et en symbolisme, clôture le parcours du musée en soulignant les thèmes de mentorat et de renaissance spirituelle présents tout au long de la saga Star Wars. Le musée offre ainsi une exploration immersive et narrative des parallèles entre l'ère de la Renaissance et l'épopée galactique de Star Wars.
 
 
-## 📂 Repository Structure
+## 📂 Structure du projet
 
 ```sh
 └── MUSEE_START_WARS/
