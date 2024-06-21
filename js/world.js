@@ -91,6 +91,8 @@ class World extends Simu {
 			);
 		  });
 
+		  console.log(camera.position.x, camera.position.y, camera.position.z);
+
 		  // pancarte
 		// const renoir = creatPancarte("renoir",{tableau:"../assets/Renoir.jpg", hauteur:1, largeur:2},scene, salleCome, 0, 2, -0.16,0) ;
 		

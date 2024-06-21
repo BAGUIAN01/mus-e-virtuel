@@ -506,18 +506,6 @@ function creerHall(nom, opts, scn, ret, cam) {
     scene
   );
 
-  // MESH.create(
-  // 	"x-wing_star_wars",
-  // 	{ scale: 1.5 },
-  // 	"x-wing_star_wars.glb",
-  // 	new BABYLON.Vector3(12, 1, 10),
-  // 	{x:0, y:-2*Math.PI/3, z:0},
-  // 	{ width: 0.5, height: 0.5, depth: 0.5 },
-  // 	new BABYLON.Vector3(0, 3, 0.5),
-  // 	false,
-  // 	scene
-  // );
-
   MESH.create(
     "grass",
     { scale: 0.5 },
@@ -712,10 +700,6 @@ function creerMezanine(nom, opts, scn) {
   murNord.position = new BABYLON.Vector3(-15, 5, 0);
   murNord.rotation.y = Math.PI / 2;
 
-  // const murSud = PRIMS.box("wall-2", { largeur: 30.1, hauteur: 5, profondeur: 0.2 , materiau: mossy_rock}, scene);
-  // murSud.position = new BABYLON.Vector3(0.1, 7.5, 0);
-  // murSud.rotation.y = Math.PI / 2;
-
   const murEst = PRIMS.wall(
     "wall-i",
     { largeur: 15.1, hauteur: 5, materiau: mossy_rock },
@@ -746,11 +730,11 @@ function creerMezanine(nom, opts, scn) {
   sol.position = new BABYLON.Vector3(-7.5, 5.05, -15.05);
   sol.rotation.x = Math.PI / 2;
 
-  var cube = MESH.TurningYoda(
+  var cube = MESH.TurningMesh(
     "yoda",
     { scale: 0.05 },
     "baby_yoda.glb",
-    new BABYLON.Vector3(-3, 4.8, 3),
+    new BABYLON.Vector3(-3, 4.8, 4),
     { x: 0, y: 0, z: 0 },
     { width: 0.5, height: 0.5, depth: 0.5 },
     new BABYLON.Vector3(0, 0.5, 0),
@@ -808,11 +792,9 @@ function creerMezanine(nom, opts, scn) {
     scene
     );
 
-  // const poster1 = PRIMS.poster("poster01",{tableau:"./assets/maison_tatooine.jpg", largeur : 15, hauteur : 5},scene);
-  // 	poster1.parent = murOuest ;
 
-  // 	poster1.rotation.y = Math.PI ;
 }
+
 // creation de la salle tatooine
 function creerSalleTatooine(nom, opts, scn, bc) {
   let scene = scn;
@@ -887,14 +869,6 @@ function creerSalleTatooine(nom, opts, scn, bc) {
     "./assets/concrete_wall_008_1k/concrete_wall_008_rough_1k.jpg",
     scene
   );
-  // text_door.uScale = 2;
-  // text_door.vScale = 2;
-  // bump_door.uScale = 2;
-  // bump_door.vScale = 2;
-  // spec_door.uScale = 2;
-  // spec_door.vScale = 2;
-  // ambient_door.uScale = 2;
-  // ambient_door.vScale = 2;
 
   const murNord = PRIMS.wall(
     "wall-2",
@@ -1291,7 +1265,7 @@ function creerSalleEtoileDeLaMort(nom, opts, scn) {
     "computer_2",
     { scale: 0.3 },
     "control_computer.glb",
-    new BABYLON.Vector3(-2.7, 0, 5.4),
+    new BABYLON.Vector3(-2.7, 0, 14.8),
     0,
     { width: 5, height: 10, depth: 5 },
     new BABYLON.Vector3(-1.5, 0, -1),
@@ -1303,7 +1277,7 @@ function creerSalleEtoileDeLaMort(nom, opts, scn) {
     "computer_3",
     { scale: 0.3 },
     "control_computer.glb",
-    new BABYLON.Vector3(-4.7, 0, 5.4),
+    new BABYLON.Vector3(-4.7, 0, 14.8),
     0,
     { width: 5, height: 10, depth: 5 },
     new BABYLON.Vector3(-1.5, 0, -1),
