@@ -110,7 +110,7 @@ _ _ _
 
 _ _ _ 
 ### 🛣 Bibliographie
-1. Doc officiel de babylonjs : https://doc.babylonjs.com/
+1. Doc officielle de babylonjs : https://doc.babylonjs.com/
 2. ChatGPT
 
 [**Return**](#Top)
