@@ -107,3 +107,7 @@ _ _ _
    lancer le projet en double cliquant sur le fichier index.html
 
    ```
+
+_ _ _ 
+### 🛣 Bibliographie
+1. Doc officiel de babylonjs : https://doc.babylonjs.com/
