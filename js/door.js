@@ -29,7 +29,10 @@ export function SlidingDoor(
 	door.position = positionDoor;
 	door.rotation.y = rotationDoor;
 
+
+	//Ouverture et fermeture de la porte
 	door.actionManager = new BABYLON.ActionManager(scn);
+
 	let ouverture =	new BABYLON.InterpolateValueAction(
 		{
 			trigger : BABYLON.ActionManager.OnIntersectionEnterTrigger,
