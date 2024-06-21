@@ -1,5 +1,7 @@
 import {PRIMS} from './prims.js' ; 
 import {Simu}  from './simu.js' ; 
+import { Create } from "./amer.js";
+
 
 class World extends Simu {
 
@@ -38,7 +40,7 @@ class World extends Simu {
 
 		const ciel = PRIMS.sky("ciel",  {}, scene) ; 
 
-	const sol = PRIMS.ground("sol", {materiau:materiau1}, scene) ;
+		const sol = PRIMS.ground("sol", {materiau:materiau1}, scene) ;
 		//const meadow = PRIMS.meadow("prairie", {}, scene);
 
 		const sphere = PRIMS.sphere("sph1", {}, scene) ; 
@@ -65,9 +67,38 @@ class World extends Simu {
 		// //Création escalier
 		const escalier = PRIMS.escalier("ecal", {}, scene);
 
+		// teleportation amers
+
+		const amerPositions = [
+			new BABYLON.Vector3(4, 2, 10),
+			new BABYLON.Vector3(2, 2, 0),
+			new BABYLON.Vector3(4, 2, -8),
+	  
+			new BABYLON.Vector3(10, 2, -12),
+		  ];
+	  
+		amerPositions.forEach((position, index) => {
+			const amer = Create(
+			  "amer" + index,
+			  {
+				diameter: 0.5,
+				position: position,
+				visibility: 0.5,
+			  },
+			  scene,
+			  camera,
+			  reticule
+			);
+		  });
+
+		  // pancarte
+		// const renoir = creatPancarte("renoir",{tableau:"../assets/Renoir.jpg", hauteur:1, largeur:2},scene, salleCome, 0, 2, -0.16,0) ;
+		
+
 
     	}
 
+		
 
 
 

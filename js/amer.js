@@ -16,7 +16,7 @@ export function Create(
 
     var mat_sphere = new BABYLON.StandardMaterial(name, scn);
     mat_sphere.specularColor = new BABYLON.Color3(0,0,0);
-	mat_sphere.diffuseColor = new BABYLON.Color3(0.4, 0.4, 0.4);
+	mat_sphere.diffuseColor = new BABYLON.Color3(0.4, 1, 0.4);
 	sphere.material = mat_sphere;
 
     sphere.actionManager = new BABYLON.ActionManager(scn);
