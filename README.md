@@ -94,3 +94,16 @@ Pour notre projet de 5e année en réalité virtuelle, nous avons conçu un mus�
 | [prims.js]({file}) | Ce fichier contient les utilitaires pour la création des objets |
 
 </details>
+
+_ _ _ 
+### 🚀 Prise en main
+1. Cloner le projet:
+   ```sh
+   git clone https://git.enib.fr/e9jegouz/musee_start_wars.git
+
+   ```
+2. lancer le projet.
+   ```sh
+   lancer le projet en double cliquant sur le fichier index.html
+
+   ```
