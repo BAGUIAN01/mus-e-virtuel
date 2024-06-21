@@ -21,10 +21,6 @@ export function Create(
 
     sphere.actionManager = new BABYLON.ActionManager(scn);
 
-    // Over/Out
-	//sphere1.actionManager.registerAction(new BABYLON.SetValueAction(BABYLON.ActionManager.OnPointerOutTrigger, sphere1.material, "emissiveColor", sphere1.material.emissiveColor));
-    //sphere1.actionManager.registerAction(new BABYLON.SetValueAction(BABYLON.ActionManager.OnPointerOverTrigger, sphere1.material, "emissiveColor", BABYLON.Color3.White()));
-	//sphere1.actionManager.registerAction(new BABYLON.SetValueAction(BABYLON.ActionManager.OnPointerOutTrigger, camera, "position", new BABYLON.Vector3(sphere1.position.x, sphere1.position.y, sphere1.position.z)));
     sphere.actionManager.registerAction(new BABYLON.SetValueAction(BABYLON.ActionManager.OnPointerOverTrigger, cam, "position", new BABYLON.Vector3(sphere.position.x, 2.1, sphere.position.z)));
 
     return sphere;

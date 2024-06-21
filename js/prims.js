@@ -805,16 +805,6 @@ function creerMezanine(nom, opts, scn) {
     scene
   );
 
-  const pancarte1 = POSTER.withDescription(
-    "pancarte1",
-    murNord,
-    "Here is the house of Yoda. Yoda was living in a little hutt in Dagobah a secluded swampy planet, filled with a rich, biodiverse ecosystem.  ",
-    new BABYLON.Vector3(-1, 1.5, -10),
-    Math.PI,
-    { tableau: "../assets/yoda_house.jpeg", hauteur: 3, largeur: 4 },
-    scene
-    );
-
   // const poster1 = PRIMS.poster("poster01",{tableau:"./assets/maison_tatooine.jpg", largeur : 15, hauteur : 5},scene);
   // 	poster1.parent = murOuest ;
 
