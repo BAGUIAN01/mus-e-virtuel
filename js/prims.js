@@ -746,13 +746,6 @@ function creerMezanine(nom, opts, scn) {
   sol.position = new BABYLON.Vector3(-7.5, 5.05, -15.05);
   sol.rotation.x = Math.PI / 2;
 
-  // const porteMeza = PRIMS.box("porte1", { largeur: 2, hauteur: 3,  }, scene)
-  // porteMeza.position = new BABYLON.Vector3(0, 6.5, -13.5);
-  // porteMeza.rotation.y = Math.PI / 2;
-
-  // const ouvertureSalle1 = creuser(murSud, porteMeza);
-  // ouvertureSalle1.material = mossy_rock;
-
   var cube = MESH.TurningYoda(
     "yoda",
     { scale: 0.05 },
@@ -1272,28 +1265,41 @@ function creerSalleEtoileDeLaMort(nom, opts, scn) {
   // 	scene
   // );
 
-  // MESH.create(
-  // 	"mesh_test",
-  // 	{ scale: 0.3 },
-  // 	"control_computer.glb",
-  // 	new BABYLON.Vector3(-4, 0, 14.8),
-  // 	0,
-  // 	{ width: 5, height: 10, depth: 5 },
-  // 	new BABYLON.Vector3(-1.5, 0, -1),
-  // 	false,
-  // 	scene
-  // );
-  // MESH.create(
-  // 	"mesh_test",
-  // 	{ scale: 0.3 },
-  // 	"control_computer.glb",
-  // 	new BABYLON.Vector3(-2.7, 0, 5.4),
-  // 	Math.PI,
-  // 	{ width: 5, height: 10, depth: 5 },
-  // 	new BABYLON.Vector3(-1.5, 0, -1),
-  // 	false,
-  // 	scene
-  // );
+  MESH.create(
+    "computer_1",
+    { scale: 0.3 },
+    "control_computer.glb",
+    new BABYLON.Vector3(-4, 0, 14.8),
+    0,
+    { width: 5, height: 10, depth: 5 },
+    new BABYLON.Vector3(-1.5, 0, -1),
+    false,
+    scene
+  );
+
+  MESH.create(
+    "computer_2",
+    { scale: 0.3 },
+    "control_computer.glb",
+    new BABYLON.Vector3(-2.7, 0, 5.4),
+    0,
+    { width: 5, height: 10, depth: 5 },
+    new BABYLON.Vector3(-1.5, 0, -1),
+    false,
+    scene
+  );
+
+  MESH.create(
+    "computer_3",
+    { scale: 0.3 },
+    "control_computer.glb",
+    new BABYLON.Vector3(-4.7, 0, 5.4),
+    0,
+    { width: 5, height: 10, depth: 5 },
+    new BABYLON.Vector3(-1.5, 0, -1),
+    false,
+    scene
+  );
 
   // MESH.create(
   // 	"mesh_test",
