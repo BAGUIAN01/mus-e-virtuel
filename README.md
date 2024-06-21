@@ -31,11 +31,9 @@ _ _ _
 - [📂 Structure du projet](#-repository-structure)
 - [⚙️ Modules](#modules)
 - [🚀 Prise en main](#-getting-started)
-    - [🔧 Installation](#-installation)
-    - [🧪 Tests](#-tests)
-- [🛣 Roadmap](#-roadmap)
-- [🤝 Contributions](#-contributing)
-- [👏 Ecrire du code pythonique](#-acknowledgments)
+- [🛣 Bibliographie](#-bibliographie)
+
+
 
 ---
 
@@ -66,7 +64,6 @@ Pour notre projet de 5e année en réalité virtuelle, nous avons conçu un mus�
     │    ├── pointerLock.js
     │    ├── poster.js
     │    ├── prims.js
-    │    ├── prims.js
     │    ├── ...
     ├─
     ├── enonce.pdf
@@ -85,3 +82,15 @@ Pour notre projet de 5e année en réalité virtuelle, nous avons conçu un mus�
 ```
 
 ---
+## ⚙️ Modules
+
+<details open><summary>JavaScript Files</summary>
+
+| File               | Summary                                                |
+|--------------------|--------------------------------------------------------|
+| [amer.js]({file})  | Code pour la téléportation dans le musée               |
+| [door.js]({file})  | Création des portes                                    |
+| [poster.js]({file})| Code pour créer les posters accrochés aux murs         |
+| [prims.js]({file}) | Ce fichier contient les utilitaires pour la création des objets |
+
+</details>
