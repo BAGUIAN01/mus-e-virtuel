@@ -15,6 +15,7 @@ export function withDescription(
 	poster.text       = dText
 	return poster
 }
+
 // Creation d'un poster
 export function create(
 	nom,
